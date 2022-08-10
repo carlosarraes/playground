@@ -3,6 +3,7 @@ import Joke from "./component/Joke"
 import jokesData from "./component/jokesData"
 
 export default function App() {
+    
     const jokeElements = jokesData.map(joke => {
         return (
             <Joke 
@@ -12,6 +13,7 @@ export default function App() {
             />
         )
     })
+
     return (
         <div>
             {jokeElements}
